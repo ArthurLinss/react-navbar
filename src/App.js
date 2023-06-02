@@ -13,12 +13,8 @@ function App() {
       <Navbar />
       <div className="container mt-2" style={{ marginTop: 40 }}>
         <Routes>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </BrowserRouter>
